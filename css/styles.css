@@ -5,6 +5,7 @@
     color: #000;
 }
 
+
 body{
     background-color: #fff;
     height: 100vh;
@@ -265,6 +266,7 @@ table thead th{
     background-position: center;
     background-repeat: no-repeat;
   }
+
 
 
 /* end of index */

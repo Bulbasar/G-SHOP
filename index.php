@@ -8,8 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/803701e46b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="styles.scss">
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>Landing Page</title>
   </head>
@@ -17,6 +16,10 @@
 
   <style>
 
+  a{
+    text-decoration: none !important;
+    color: #000;
+  }
   #search-addon i{
       color: #fff; cursor: pointer; font-size: 1.4em;
   }
@@ -24,6 +27,90 @@
   #search-addon .fa-search:hover{
     color: orangered;
   }
+
+  .shop-now-btn button:hover{
+    background-color: #333 !important;
+    transition: ease 0.3s !important;
+  }
+
+  .trends button:hover{
+    background-color: #333 !important;
+    transition: ease 0.3s !important;
+  }
+  .txt-type > .txt{
+    border-right: 1px solid #000;
+  }
+
+  #semi-footer-table thead th{
+    color: #000 !important;
+  }
+
+  #semi-footer-table tbody tr td a{
+    color: gray !important;
+  }
+
+  #semi-footer-table tbody tr td a:hover{
+    color: black !important;
+  }
+
+  #semi-footer-table thead th:nth-child(1){
+    width: 25%;
+  }
+
+  #semi-footer-table tbody tr td:nth-child(1){
+    width: 25%;
+  }
+
+  #semi-footer-table thead th:nth-child(2){
+    width: 25%;
+  }
+
+  #semi-footer-table tbody tr td:nth-child(2){
+    width: 25%;
+  }
+
+  #semi-footer-table thead th:nth-child(3){
+    width: 25%;
+  }
+
+  #semi-footer-table tbody tr td:nth-child(3){
+    width: 25%;
+  }
+
+    #semi-footer-table thead th:nth-child(4){
+    width: 25%;
+  }
+
+  #semi-footer-table tbody tr td:nth-child(4){
+    width: 25%;
+  }
+
+  ul {
+  list-style-type: none;
+  }
+
+  ul li a:hover{
+    color: #fff !important;
+  }
+
+  /* Bouncing animation for the icon */
+  @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-20px);
+        }
+        60% {
+            transform: translateY(-10px);
+        }
+    }
+
+    /* Apply the bouncing animation to the icon */
+    .bouncing-icon {
+        animation: bounce 1s infinite;
+    }
+
   </style>
 
     <div class="container-fliud w-100 h-100">
@@ -369,11 +456,11 @@
               </div>
           </div>
           <div class="features w-100 h-75">
-              <div class="container-fluid h-100 border border-dark pt-3" style="width: 85%">
+              <div class="container-fluid h-100 pt-3" style="width: 85%">
                   <div class="feature-title w-100 d-flex justify-content-center" style="height: 10%">
-                      <h4 style="font-size: 2.3em; letter-spacing: 2px">Featured</h4>
+                      <h4 style="font-size: 2.3em; letter-spacing: 2px" class="font-italic">Featured</h4>
                   </div>
-                  <div class="w-100 border d-flex flex-row justify-content-around" style="height:90%">
+                  <div class="w-100 d-flex flex-row justify-content-around" style="height:90%">
                       <div class="card h-100 border d-flex flex-column justify-content-between" style="width: 30%">
                         <div class="w-100 card p-3 border" style="height: 90%">
 
@@ -401,126 +488,248 @@
                   </div>
               </div>
           </div>
-          <br>
+          <div class="shop-now w-100 mt-3" style="height: 40%">
+              <div class="container-fluid h-100  p-3" style="width: 85%">
+                  <div class="shop-now-typewriter pl-3 pt-2 ">
+                      <h6 style="font-size: 3em;" class="font-italic">Explore G-SHOP for
+                        <span class="txt-type" data-wait="2000" data-words='["Fashion", "Design", "Daily Use"]'></span>
+                      </h6>
+                  </div>
+                  <div class="w-100 mt-5">
+                      <p style="text-align:center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi ea quaerat iusto voluptatem omnis nostrum facere fugit dignissimos id, eos voluptatum odit necessitatibus quo recusandae praesentium officia error similique magni itaque voluptates eius eligendi possimus delectus magnam? Omnis, reprehenderit cumque neque saepe voluptates porro nobis ipsam! Doloribus aut odit quibusdam nobis exercitationem veritatis ad quaerat eum maxime consectetur mollitia, officia itaque ex. Similique, laudantium quibusdam.</p>
+                  </div>
+                  <div class="shop-now-btn w-100 d-flex justify-content-center mt-5" style="height: 15%">
+                    <button class="btn d-flex justify-content-center align-items-center" style="width: 7%; height: 100%; background-color: #000; color: #fff;">Shop Now</button>
+                  </div>
+              </div>
+          </div>
+          <div class="new-arrival w-100 h-75">
+              <div class="container-fluid h-100 p-5 d-flex flex-column justify-content-between" style="width: 85%">
+                  <div class="w-100 d-flex flex-row justify-content-between p-3" style="height: 45%">
+                      <div class="card h-100 border" style="width: 48%"></div>
+                      <div class="card h-100 border" style="width: 48%"></div>
+                  </div>
+                  <div class="w-100 d-flex flex-row justify-content-between p-3" style="height: 45%">
+                      <div class="card h-100 border" style="width: 48%"></div>
+                      <div class="card h-100 border" style="width: 48%"></div>
+                  </div>
+                  <div style="height: 10%" class="w-100 d-flex flex-row justify-content-between pr-3 pl-3">
+                      <div class="w-75 h-100 d-flex justify-content-start align-items-center">
+                        <h4 style="font-size: 2.3em; letter-spacing: 2px" class="font-italic">Just In</h4>
+                      </div>
+                      <div class="w-25 h-100 d-flex justify-content-end align-items-center ">
+                          <h6 class="font-italic" >More new arrival?<a href="#"> Click here <span><i class="fa-solid fa-arrow-right"></i></a></span></h6>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="shop-now w-100 mt-3" style="height: 15%">
+              <div class="container-fluid h-100 d-flex justify-content-center flex-column" style="width: 85%">
+                  <p style="text-align:center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus vitae minima unde cupiditate quae porro sapiente labore alias itaque delectus tenetur dignissimos, dolorum quasi. Cum velit asperiores quibusdam sed deserunt ducimus placeat adipisci laborum beatae, tempora eos quisquam officiis quo molestiae assumenda est fuga omnis voluptatem itaque dolorem ratione! Earum?</p>
+                  <div class="d-flex justify-content-center w-100 shop-now-btn" style="height: 35%">
+                    <button class="btn d-flex justify-content-center align-items-center" style="width: 7%; height: 100%; background-color: #000; color: #fff;">Shop Now</button>
+                  </div>
+              </div>
+          </div>
+          <div class="trends w-100 mt-5" style="height: 60%">
+              <div class="container-fluid h-100 " style="width: 85%">
+                  <div class="trends-title  w-100 d-flex justify-content-center align-items-center" style="height: 13%">
+                    <h4 style="font-size: 2.3em; letter-spacing: 2px" class="font-italic">Trend Alert</h4>
+                  </div>
+                  <div class="trend-container w-100  d-flex flex-row justify-content-around" style="height: 87%">
+                      <div class="card h-100 p-3 d-flex flex-column justify-content-between" style="width: 28%">
+                          <div class="w-100 card" style="height: 78%">
+
+                          </div>
+                          <div class="w-100 d-flex align-items-center justify-content-between" style="height: 20%">
+                              <div class="trend-container-title w-75 h-100 d-flex flex-column pl-2">
+                                    <span style="font-weight: bold; font-size: 1.2em">Name</span>
+                                    <span style="color: gray; font-size: 0.9em; font-weight: bold;">Description</span>
+                                    <span style="color: gray; font-size: 0.9em; font-weight: bold;">Price</span>
+                              </div>
+                              <div class="trend-container-btn w-25 h-100 d-flex align-items-center">
+                                  <button class="btn d-flex align-items-center justify-content-center" style="background-color: #000; height: 50%; color: white">Buy Now</button>
+                              </div>
+
+                          </div>
+                      </div>
+                      <div class="card h-100 p-3 d-flex flex-column justify-content-between" style="width: 28%">
+                          <div class="w-100 card" style="height: 80%">
+
+                          </div>
+                          <div class="w-100 d-flex align-items-center justify-content-between" style="height: 20%">
+                              <div class="trend-container-title w-75 h-100 d-flex flex-column pl-2">
+                                  <span style="font-weight: bold; font-size: 1.2em">Name</span>
+                                  <span style="color: gray; font-size: 0.9em; font-weight: bold;">Description</span>
+                                  <span style="color: gray; font-size: 0.9em; font-weight: bold;">Price</span>
+                              </div>
+                              <div class="trend-container-btn w-25 h-100 d-flex align-items-center">
+                                  <button class="btn d-flex align-items-center justify-content-center" style="background-color: #000; height: 50%; color: white">Buy Now</button>
+                              </div>
+
+                          </div>
+                      </div>
+                      <div class="card h-100 p-3 d-flex flex-column justify-content-between" style="width: 28%">
+                          <div class="w-100 card" style="height: 80%">
+
+                          </div>
+                          <div class="w-100 d-flex align-items-center justify-content-between" style="height: 20%">
+                              <div class="trend-container-title w-75 h-100 d-flex flex-column pl-2">
+                                  <span style="font-weight: bold; font-size: 1.2em">Name</span>
+                                  <span style="color: gray; font-size: 0.9em; font-weight: bold;">Description</span>
+                                  <span style="color: gray; font-size: 0.9em; font-weight: bold;">Price</span>
+                              </div>
+                              <div class="trend-container-btn w-25 h-100 d-flex align-items-center">
+                                  <button class="btn d-flex align-items-center justify-content-center" style="background-color: #000; height: 50%; color: white">Buy Now</button>
+                              </div>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="semi-footer w-100 h-25 mt-5">
+              <div class="container-fluid h-100" style="width: 79%">
+                  <table class="mx-auto table table-borderless" id="semi-footer-table" style="width: 70%">
+                        <thead>
+                          <th>Iconic</th>
+                          <th>Best Buy</th>
+                          <th>Sale</th>
+                          <th>Most Likes</th>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><a href="#">Sample</a></td>
+                            <td><a href="#">Sample</a></td>
+                            <td><a href="#">Sample</a></td>
+                            <td><a href="#">Sample</a></td>
+                          </tr>
+                          <tr>
+                            <td><a href="#">Sample</a></td>
+                            <td><a href="#">Sample</a></td>
+                            <td><a href="#">Sample</a></td>
+                            <td><a href="#">Sample</a></td>
+                          </tr>
+                          <tr>
+                            <td><a href="#">Sample</a></td>
+                            <td><a href="#">Sample</a></td>
+                            <td><a href="#">Sample</a></td>
+                            <td><a href="#">Sample</a></td>
+                          </tr>
+                        </tbody>
+                  </table>
+              </div>
+          </div>
+          <footer class="w-100 shadow" style="height: 25%; background-color: #000;">
+              <div class="h-100 pr-3 pt-3 pl-3 container-fluid d-flex flex-column justify-content-between" style="width: 85%">
+                  <div class="h-75 w-100 d-flex flex-row justify-content-between">
+                      <div class="footer-menu w-50 h-100 d-flex flex-row justify-content-around">
+                          <div class="h-100 d-flex justify-content-center " style="width: 30%">
+                              <ul class="mt-2">
+                                <li><a href="" style="color:#fff; font-weight: bold;">Sample</a></li>
+                                <li><a href="" style="color:#fff; font-weight: bold;">Sample</a></li>
+                                <li><a href="" style="color:#fff; font-weight: bold;">Sample</a></li>
+                                <li><a href="" style="color:#fff; font-weight: bold;">Sample</a></li>
+                              </ul>
+                          </div>
+                          <div class="h-100 d-flex justify-content-center " style="width: 30%">
+                              <ul class="mt-2">
+                                <li><a href="" style="color:#fff; font-weight: bold;">Sample</a></li>
+                                <li><a href="" style="color:gray; font-size: 0.9em;">Sample</a></li>
+                                <li><a href="" style="color:gray; font-size: 0.9em;">Sample</a></li>
+                                <li><a href="" style="color:gray; font-size: 0.9em;">Sample</a></li>
+                              </ul>
+                          </div>
+                          <div class="h-100 d-flex justify-content-center " style="width: 30%">
+                              <ul class="mt-2">
+                                <li><a href="" style="color:#fff; font-weight: bold;">Sample</a></li>
+                                <li><a href="" style="color:gray; font-size: 0.9em;">Sample</a></li>
+                                <li><a href="" style="color:gray; font-size: 0.9em;">Sample</a></li>
+                                <li><a href="" style="color:gray; font-size: 0.9em;">Sample</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="w-50 h-100 d-flex flex-row justify-content-between">
+                          <div class="w-50 h-100"></div>
+                          <div class="w-50 h-100 d-flex justify-content-center" id="bouncing-out">
+                              <div class="h-100 d-flex flex-row justify-content-around mt-3" style="width: 75%">
+                                  <div class="w-25 h-100" id="fb">
+                                    <div class="d-flex align-items-center justify-content-center" style="background-color: gray; border-radius: 50%; width: 55%; height: 25%; cursor: pointer;" >
+                                      <a href="#"><i class="fa-brands fa-facebook-f" style="font-size: 1.3em"></i></a>
+                                    </div>
+                                  </div>
+                                  <div class="w-25 h-100" id="twt">
+                                    <div class="d-flex align-items-center justify-content-center" style="background-color: gray; border-radius: 50%; width: 55%; height: 25%; cursor: pointer;" >
+                                      <a href="#"><i class="fa-brands fa-twitter" style="font-size: 1.3em"></i></a>
+                                    </div>
+                                  </div>
+                                  <div class="w-25 h-100" id="ig">
+                                    <div class="d-flex align-items-center justify-content-center" style="background-color: gray; border-radius: 50%; width: 55%; height: 25%; cursor: pointer;" >
+                                      <a href="#"><i class="fa-brands fa-instagram" style="font-size: 1.3em"></i></a>
+                                    </div>
+                                  </div>
+                                  <div class="w-25 h-100" id="yt">
+                                    <div class="d-flex align-items-center justify-content-center" style="background-color: gray; border-radius: 50%; width: 55%; height: 25%; cursor: pointer;" >
+                                      <a href="#"><i class="fa-brands fa-youtube" style="font-size: 1.3em"></i></a>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="h-25 w-100 d-flex justify-content-center align-items-center">
+                      <p style="color: white; font-size:0.8em" class="mt-3">Philippines, &#169; 2023 G-SHOP, All Rights Reserved.</p>
+                  </div>
+              </div>
+          </footer>
     </div>
 
 
     <script>
-      m_link_1 = document.getElementById("m_link_1");
-      m_link_2 = document.getElementById("m_link_2");
-      m_link_3 = document.getElementById("m_link_3");
-      m_link_4 = document.getElementById("m_link_4");
-      m_link_5 = document.getElementById("m_link_5");
-      m_link_6 = document.getElementById("m_link_6");
-      m_link_7 = document.getElementById("m_link_7");
-      tb_link_1 = document.getElementById("tb_link_1");
-      tb_link_2 = document.getElementById("tb_link_2");
-      tb_link_3 = document.getElementById("tb_link_3");
-      tb_link_4 = document.getElementById("tb_link_4");
-      tb_link_5 = document.getElementById("tb_link_5");
-      tb_link_5a = document.getElementById("tb_link_5a");
-      tb_link_5b = document.getElementById("tb_link_5b");
-      menu = document.getElementById("main-nav-menu");
+      fb = document.getElementById("fb");
+      ig = document.getElementById("ig");
+      twt = document.getElementById("twt");
+      yt = document.getElementById("yt");
+      bounceOut = document.getElementById("bouncing-out");
 
-      m_link_1.addEventListener("mouseover", function() {
-        menu.style.display = "block";
-        tb_link_1.style.display = "table";
-
-        tb_link_2.style.display = 'none';
-        tb_link_3.style.display = 'none';
-        tb_link_4.style.display = 'none';
-        tb_link_5.style.display = 'none';
-
-        tb_link_5a.style.display = "none";
-        tb_link_5b.style.display = "none";
-        
-      });
-
-      m_link_2.addEventListener("mouseover", function() {
-        menu.style.display = "block";
-        tb_link_2.style.display = "table";
-
-        tb_link_1.style.display = 'none';
-        tb_link_3.style.display = 'none';
-        tb_link_4.style.display = 'none';
-        tb_link_5.style.display = 'none';
-
-        tb_link_5a.style.display = "none";
-        tb_link_5b.style.display = "none";
-      });
-      
-      m_link_3.addEventListener("mouseover", function() {
-        menu.style.display = "block";
-        tb_link_3.style.display = "table";
-
-        tb_link_2.style.display = 'none';
-        tb_link_1.style.display = 'none';
-        tb_link_4.style.display = 'none';
-        tb_link_5.style.display = 'none';
-
-        tb_link_5a.style.display = "none";
-        tb_link_5b.style.display = "none";
-      });
-
-
-      m_link_4.addEventListener("mouseover", function() {
-        menu.style.display = "block";
-        tb_link_4.style.display = "table";
-
-        tb_link_2.style.display = 'none';
-        tb_link_3.style.display = 'none';
-        tb_link_1.style.display = 'none';
-        tb_link_5.style.display = 'none';
-        
-        tb_link_5a.style.display = "none";
-        tb_link_5b.style.display = "none";
-      });
-
-    
-      m_link_5.addEventListener("mouseover", function() {
-        menu.style.display = "block";
-        // tb_link_5.style.display = "table";
-        tb_link_5a.style.display = "table";
-        tb_link_5b.style.display = "table";
-
-        tb_link_2.style.display = 'none';
-        tb_link_3.style.display = 'none';
-        tb_link_4.style.display = 'none';
-        tb_link_1.style.display = 'none';
-      });
-
-      m_link_6.addEventListener("mouseover", function() {
-        menu.style.display = "none";
-        tbl_link_1.style.dislay = "none";
-        tbl_link_2.style.dislay = "none";
-        tbl_link_3.style.dislay = "none";
-        tbl_link_4.style.dislay = "none";
-        tbl_link_5.style.dislay = "none";
-      });
-
-      m_link_7.addEventListener("mouseover", function() {
-        menu.style.display = "none";
-        tbl_link_1.style.dislay = "none";
-        tbl_link_2.style.dislay = "none";
-        tbl_link_3.style.dislay = "none";
-        tbl_link_4.style.dislay = "none";
-        tbl_link_5.style.dislay = "none";
+      fb.addEventListener("mouseover", function(){
+          fb.classList.add("bouncing-icon");
+          ig.classList.remove("bouncing-icon");
+          twt.classList.remove("bouncing-icon");
+          yt.classList.remove("bouncing-icon");
       });
 
       
-      menu.addEventListener("mouseover", function() {
-        menu.style.display = "block";
+      ig.addEventListener("mouseover", function(){
+          fb.classList.remove("bouncing-icon");
+          ig.classList.add("bouncing-icon");
+          twt.classList.remove("bouncing-icon");
+          yt.classList.remove("bouncing-icon");
       });
 
-      menu.addEventListener("mouseout", function() {
-        menu.style.display = "none";
-        tbl_link_1.style.dislay = "none";
-        tbl_link_2.style.dislay = "none";
-        tbl_link_3.style.dislay = "none";
-        tbl_link_4.style.dislay = "none";
-        tbl_link_5.style.dislay = "none";
+      
+      twt.addEventListener("mouseover", function(){
+          fb.classList.remove("bouncing-icon");
+          ig.classList.remove("bouncing-icon");
+          twt.classList.add("bouncing-icon");
+          yt.classList.remove("bouncing-icon");
       });
-    
+
+      
+      yt.addEventListener("mouseover", function(){
+          fb.classList.remove("bouncing-icon");
+          ig.classList.remove("bouncing-icon");
+          twt.classList.remove("bouncing-icon");
+          yt.classList.add("bouncing-icon");
+      });
+
+      bounceOut.addEventListener("mouseout", function(){
+          fb.classList.remove("bouncing-icon");
+          ig.classList.remove("bouncing-icon");
+          twt.classList.remove("bouncing-icon");
+          yt.classList.remove("bouncing-icon");
+      });
+
     </script>
 
 
@@ -529,5 +738,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
